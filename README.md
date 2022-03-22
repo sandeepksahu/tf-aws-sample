@@ -1,1 +1,3 @@
-# tf-aws-sample
+## tf-aws-sample
+terraform init
+terraform plan
