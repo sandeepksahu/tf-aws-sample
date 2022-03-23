@@ -13,16 +13,16 @@ provider "aws" {
   region  = "us-east-1"
 }
 
-# resource "aws_s3_bucket" "demo" {
-#   bucket = "demo"
+resource "aws_s3_bucket" "demo" {
+  bucket = "demo"
 
-#   tags = {
-#     Name        = "demo"
-#     Environment = "poc"
-#   }
-# }
+  tags = {
+    Name        = "demo"
+    Environment = "poc"
+  }
+}
 
-# resource "aws_s3_bucket_acl" "demo" {
-#   bucket = aws_s3_bucket.demo.id
-#   acl    = "private"
-# }
+resource "aws_s3_bucket_acl" "demo" {
+  bucket = aws_s3_bucket.demo.id
+  acl    = "private"
+}
